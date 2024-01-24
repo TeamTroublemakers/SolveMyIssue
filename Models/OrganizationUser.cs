@@ -7,11 +7,11 @@ namespace SolveMyIssue.Models
 {
     public class OrganizationUser : User
     {
-        private Organization _organization;
+        private string _organizationId;
 
-        public OrganizationUser(string name, string email, string password, Organization organization) : base(name, email, password)
+        public OrganizationUser(string name, string email, string password, string organizationId) : base(name, email, password)
         {
-            _organization = organization;
+            _organizationId = organizationId;
         }
 
     }

@@ -8,28 +8,28 @@ namespace SolveMyIssue.Models
     public class Comment
     {
         private Guid _id;
-        private User _user;
-        private Issue _issue;
-        private Solution? _solution;
+        private string _userId;
+        private string _issueId;
+        private string? _solutionId;
         private string _text;
-        private List<Like> _likes;
+        private List<string> _likeIds;
 
-        public Comment(User user, Issue issue, string text)
+        public Comment(string userId, string issueId, string text)
         {
             _id = Guid.NewGuid();
-            _user = user;
-            _issue = issue;
+            _userId = userId;
+            _issueId = issueId;
             _text = text;
-            _likes = new List<Like>();
+            _likeIds = new List<string>();
         }
 
-        public Comment(User user, Solution solution, string text)
+        public Comment(string userId, string solutionId, string text)
         {
             _id = Guid.NewGuid();
-            _user = user;
-            _solution = solution;
+            _userId = userId;
+            _solutionId = solutionId;
             _text = text;
-            _likes = new List<Like>();
+            _likeIds = new List<string>();
         }
     }
 }

@@ -8,30 +8,30 @@ namespace SolveMyIssue.Models
     public class Like
     {
         private Guid _id;
-        private User _user;
-        private Issue _issue;
-        private Solution? _solution;
-        private Comment? _comment;
+        private string _userId;
+        private string _issueId;
+        private string? _solutionId;
+        private string? _commentId;
 
-        public Like(User user, Issue issue)
+        public Like(string userId, string issueId)
         {
             _id = Guid.NewGuid();
-            _user = user;
-            _issue = issue;
+            _userId = userId;
+            _issueId = issueId;
         }
 
-        public Like(User user, Solution solution)
+        public Like(string userId, string solutionId)
         {
             _id = Guid.NewGuid();
-            _user = user;
-            _solution = solution;
+            _userId = userId;
+            _solutionId = solutionId;
         }
 
-        public Like(User user, Comment comment)
+        public Like(string userId, string commentId)
         {
             _id = Guid.NewGuid();
-            _user = user;
-            _comment = comment;
+            _userId = userId;
+            _commentId = commentId;
         }
 
     }
