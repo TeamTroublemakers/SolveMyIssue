@@ -3,33 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SolveMyIssue.Models
+namespace SolveMyIssue.DataAccess.Models
 {
-    public class Comment
+    public class Like
     {
         private Guid _id;
         private string _userId;
         private string _issueId;
         private string? _solutionId;
-        private string _text;
-        private List<string> _likeIds;
+        private string? _commentId;
 
-        public Comment(string userId, string issueId, string text)
+        public Like(string userId, string issueId)
         {
             _id = Guid.NewGuid();
             _userId = userId;
             _issueId = issueId;
-            _text = text;
-            _likeIds = new List<string>();
         }
 
-        //public Comment(string userId, string solutionId, string text)
+        //public Like(string userId, string solutionId)
         //{
         //    _id = Guid.NewGuid();
         //    _userId = userId;
         //    _solutionId = solutionId;
-        //    _text = text;
-        //    _likeIds = new List<string>();
         //}
+
+        //public Like(string userId, string commentId)
+        //{
+        //    _id = Guid.NewGuid();
+        //    _userId = userId;
+        //    _commentId = commentId;
+        //}
+
     }
 }

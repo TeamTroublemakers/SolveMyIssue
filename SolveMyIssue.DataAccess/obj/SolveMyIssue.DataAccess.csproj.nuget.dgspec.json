@@ -4,14 +4,14 @@
     "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj": {
+    "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.Common\\SolveMyIssue.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj",
-        "projectName": "SolveMyIssue.DataAccess",
-        "projectPath": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.Common\\SolveMyIssue.Common.csproj",
+        "projectName": "SolveMyIssue.Common",
+        "projectPath": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.Common\\SolveMyIssue.Common.csproj",
         "packagesPath": "C:\\Users\\Angela\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,75 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj",
+        "projectName": "SolveMyIssue.DataAccess",
+        "projectPath": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Angela\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Angela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.Common\\SolveMyIssue.Common.csproj": {
+                "projectPath": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.Common\\SolveMyIssue.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.23.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
