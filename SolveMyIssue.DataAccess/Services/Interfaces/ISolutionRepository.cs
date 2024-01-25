@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SolveMyIssue.DataAccess.Services.Interfaces
 {
-	internal interface ISolutionRepository : IRepository<Solution>
+	public interface ISolutionRepository : IRepository<Solution>
 	{
 	}
 }

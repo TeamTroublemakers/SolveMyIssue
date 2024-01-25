@@ -7,7 +7,8 @@ namespace SolveMyIssue.DataAccess.Models
 {
     public class User
     {
-        private Guid Id { get; set; }
+		public string Id { get; set; }
+		
         private string Name { get; set; }
         private string Email { get; set; }
         private string Password { get; set; }
@@ -17,9 +18,9 @@ namespace SolveMyIssue.DataAccess.Models
         private List<string> LikeIds { get; set; }
         private List<string> OrganizationIds { get; set; }
 
-        public User(string name, string email, string password)
+        public User(string id,string name, string email, string password)
         {
-            Id = Guid.NewGuid();
+            Id = id;
             Name = name;
             Email = email;
             Password = password;
@@ -28,5 +29,12 @@ namespace SolveMyIssue.DataAccess.Models
             CommentIds = new List<string>();
             LikeIds = new List<string>();
         }
-    }
+
+		public User(string name, string email, string password)
+		{
+			Name = name;
+			Email = email;
+			Password = password;
+		}
+	}
 }

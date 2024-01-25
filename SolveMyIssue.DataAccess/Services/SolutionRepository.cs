@@ -16,8 +16,8 @@ namespace SolveMyIssue.DataAccess.Services
 
         public SolutionRepository()
         {
-			var databaseName = "";
-			var collectionName = "";
+			var databaseName = "SolveMyIssue";
+			var collectionName = "Solutions";
 
 			var mongoClient = new MongoClient(Environment.GetEnvironmentVariable("CONNECTION_STRING"));
 			var mongoDatabase = mongoClient.GetDatabase(databaseName);
