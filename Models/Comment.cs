@@ -23,13 +23,13 @@ namespace SolveMyIssue.Models
             _likeIds = new List<string>();
         }
 
-        public Comment(string userId, string solutionId, string text)
-        {
-            _id = Guid.NewGuid();
-            _userId = userId;
-            _solutionId = solutionId;
-            _text = text;
-            _likeIds = new List<string>();
-        }
+        //public Comment(string userId, string solutionId, string text)
+        //{
+        //    _id = Guid.NewGuid();
+        //    _userId = userId;
+        //    _solutionId = solutionId;
+        //    _text = text;
+        //    _likeIds = new List<string>();
+        //}
     }
 }

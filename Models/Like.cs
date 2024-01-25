@@ -20,19 +20,19 @@ namespace SolveMyIssue.Models
             _issueId = issueId;
         }
 
-        public Like(string userId, string solutionId)
-        {
-            _id = Guid.NewGuid();
-            _userId = userId;
-            _solutionId = solutionId;
-        }
+        //public Like(string userId, string solutionId)
+        //{
+        //    _id = Guid.NewGuid();
+        //    _userId = userId;
+        //    _solutionId = solutionId;
+        //}
 
-        public Like(string userId, string commentId)
-        {
-            _id = Guid.NewGuid();
-            _userId = userId;
-            _commentId = commentId;
-        }
+        //public Like(string userId, string commentId)
+        //{
+        //    _id = Guid.NewGuid();
+        //    _userId = userId;
+        //    _commentId = commentId;
+        //}
 
     }
 }
