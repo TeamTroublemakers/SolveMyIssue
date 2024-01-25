@@ -7,6 +7,6 @@ namespace SolveMyIssue.DataAccess.Models
 {
     public class Solution
     {
-        
-    }
+		public string Id { get; set; }
+	}
 }

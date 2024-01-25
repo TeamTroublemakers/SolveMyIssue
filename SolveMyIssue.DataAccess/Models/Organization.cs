@@ -7,7 +7,8 @@ namespace SolveMyIssue.DataAccess.Models
 {
     public class Organization
     {
-        private Guid _id;
+		public string Id { get; set; }
+		private Guid _id;
         private string _name;
         private string _email;
         private List<string> _adminIds;
