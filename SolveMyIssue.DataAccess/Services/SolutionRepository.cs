@@ -1,4 +1,5 @@
 ﻿using MongoDB.Driver;
+using SolveMyIssue.Common.Interfaces;
 using SolveMyIssue.DataAccess.Models;
 using SolveMyIssue.DataAccess.Services.Interfaces;
 using System;
@@ -44,9 +45,14 @@ namespace SolveMyIssue.DataAccess.Services
 			return await _solutionCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
 		}
 
-		public async Task UpdateAsync(Issue entity)
+		public async Task UpdateAsync(Solution entity)
 		{
 			await _solutionCollection.ReplaceOneAsync(x => x.Id == entity.Id, entity);
+		}
+
+		Task IRepository<Solution>.UpdateAsync(Solution entity)
+		{
+			throw new NotImplementedException();
 		}
 	}
 }
