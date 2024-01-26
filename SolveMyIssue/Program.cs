@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using SolveMyIssue.Data;
+using SolveMyIssue.DataAccess.Models;
 using SolveMyIssue.DataAccess.Services;
 using SolveMyIssue.DataAccess.Services.Interfaces;
+using SolveMyIssue.Routes;
 
 
 
@@ -32,5 +34,10 @@ app.UseRouting();
 
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
+
+IssueRoutes.MapIssueEndpoints(app);
+
+
+
 
 app.Run();
