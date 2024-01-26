@@ -1,4 +1,5 @@
 ﻿using MongoDB.Driver;
+using SolveMyIssue.Common.Interfaces;
 using SolveMyIssue.DataAccess.Models;
 using SolveMyIssue.DataAccess.Services.Interfaces;
 using System;
@@ -15,8 +16,8 @@ namespace SolveMyIssue.DataAccess.Services
 
         public SolutionRepository()
         {
-			var databaseName = "";
-			var collectionName = "";
+			var databaseName = "SolveMyIssue";
+			var collectionName = "Solutions";
 
 			var mongoClient = new MongoClient(Environment.GetEnvironmentVariable("CONNECTION_STRING"));
 			var mongoDatabase = mongoClient.GetDatabase(databaseName);
@@ -47,6 +48,11 @@ namespace SolveMyIssue.DataAccess.Services
 		public async Task UpdateAsync(Solution entity)
 		{
 			await _solutionCollection.ReplaceOneAsync(x => x.Id == entity.Id, entity);
+		}
+
+		Task IRepository<Solution>.UpdateAsync(Solution entity)
+		{
+			throw new NotImplementedException();
 		}
 	}
 }
