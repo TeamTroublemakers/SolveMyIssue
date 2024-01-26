@@ -9,19 +9,18 @@ using System.Threading.Tasks;
 
 namespace SolveMyIssue.DataAccess.Services
 {
-	internal class IssueRepository : IIssueRepository
+	public class IssueRepository : IIssueRepository
 	{
 		private readonly IMongoCollection<Issue> _issueCollection;
 		public IssueRepository()
 		{
 			
-			var databaseName = "";
-			var collectionName = "";
+			var databaseName = "SolveMyIssue";
+			var collectionName = "Issues";
 
 			var mongoClient = new MongoClient(Environment.GetEnvironmentVariable("CONNECTION_STRING"));
 			var mongoDatabase = mongoClient.GetDatabase(databaseName);
 			_issueCollection = mongoDatabase.GetCollection<Issue>(collectionName);
-
 
 		}
 

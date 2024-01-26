@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SolveMyIssue.DataAccess.Services
 {
-	internal class SolutionRepository :ISolutionRepository
+	internal class SolutionRepository : ISolutionRepository
 	{
 		private readonly IMongoCollection<Solution> _solutionCollection;
 
@@ -44,7 +44,7 @@ namespace SolveMyIssue.DataAccess.Services
 			return await _solutionCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
 		}
 
-		public async Task UpdateAsync(Issue entity)
+		public async Task UpdateAsync(Solution entity)
 		{
 			await _solutionCollection.ReplaceOneAsync(x => x.Id == entity.Id, entity);
 		}

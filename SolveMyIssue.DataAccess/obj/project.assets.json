@@ -795,23 +795,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vasil\\.nuget\\packages\\": {},
+    "C:\\Users\\Angela\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vasil\\Desktop\\TeamTroublemakers\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj",
       "projectName": "SolveMyIssue.DataAccess",
-      "projectPath": "C:\\Users\\vasil\\Desktop\\TeamTroublemakers\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj",
-      "packagesPath": "C:\\Users\\vasil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vasil\\Desktop\\TeamTroublemakers\\SolveMyIssue.DataAccess\\obj\\",
+      "projectPath": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj",
+      "packagesPath": "C:\\Users\\Angela\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\vasil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Angela\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -820,15 +820,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\vasil\\Desktop\\TeamTroublemakers\\SolveMyIssue.Common\\SolveMyIssue.Common.csproj": {
-              "projectPath": "C:\\Users\\vasil\\Desktop\\TeamTroublemakers\\SolveMyIssue.Common\\SolveMyIssue.Common.csproj"
+            "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.Common\\SolveMyIssue.Common.csproj": {
+              "projectPath": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.Common\\SolveMyIssue.Common.csproj"
             }
           }
         }
