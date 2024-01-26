@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using MongoDB.Driver;
 using SolveMyIssue.Data;
 using SolveMyIssue.DataAccess.Services;
 using SolveMyIssue.DataAccess.Services.Interfaces;
@@ -11,7 +12,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<WeatherForecastService>();
+
+var client = new MongoClient(Environment.GetEnvironmentVariable("CONNECTION_STRING"));
+builder.Services.AddSingleton<MongoClient>(client);
+builder.Services.AddSingleton<IUserRepository, UserRepository>();
 builder.Services.AddSingleton<IIssueRepository, IssueRepository>();
 
 var app = builder.Build();
