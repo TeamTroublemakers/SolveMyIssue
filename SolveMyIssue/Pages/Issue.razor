@@ -1,10 +1,20 @@
 ﻿@page "/issue"
+@using SolveMyIssue.DataAccess.Models
+@using SolveMyIssue.DataAccess.Services.Interfaces
+@inject IIssueRepository IssueRepository
 
+<EditForm FormName="Chat" Model="newChatMesssage" OnSubmit="SendMessage">
+    <InputText @bind-Value="newChatMesssage.Sender"></InputText>
+    <InputText @bind-Value="newChatMesssage.Message"></InputText>
+    <button class="btn btn-danger" type="submit">Send Message</button>
+</EditForm>
+
+<EditForm FormName="Issue"
 <div class="container mt-3">
     <h1>Issue</h1>
    
     <img src="logoSMI.png" class="img-fluid" alt="Issue Image" width="200" height="auto">
-  
+ 
 
     <div class="form-group">
         <label for="title">Title</label>
@@ -33,6 +43,10 @@
 
 
 @code {
+
+    private Issue newIssue { get; set; } = new Issue();
+
+    
 
     
 }

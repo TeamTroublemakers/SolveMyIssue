@@ -15,7 +15,7 @@ namespace SolveMyIssue.DataAccess.Models
         public string? Category { get; set; }
         public DateTime Created { get; set; }
 
-        //public List<string>? Comments = new List<string>();
+        public List<string>? Comments = new List<string>();
         public string? Image {  get; set; }
 
 
