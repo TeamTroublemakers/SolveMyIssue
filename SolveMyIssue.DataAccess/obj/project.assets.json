@@ -31,6 +31,19 @@
           }
         }
       },
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -356,6 +369,37 @@
         "lib/netstandard2.0/AWSSDK.SecurityToken.xml",
         "tools/install.ps1",
         "tools/uninstall.ps1"
+      ]
+    },
+    "BCrypt.Net-Next/4.0.3": {
+      "sha512": "W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "type": "package",
+      "path": "bcrypt.net-next/4.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net-next.4.0.3.nupkg.sha512",
+        "bcrypt.net-next.nuspec",
+        "ico.png",
+        "lib/net20/BCrypt.Net-Next.dll",
+        "lib/net20/BCrypt.Net-Next.xml",
+        "lib/net35/BCrypt.Net-Next.dll",
+        "lib/net35/BCrypt.Net-Next.xml",
+        "lib/net462/BCrypt.Net-Next.dll",
+        "lib/net462/BCrypt.Net-Next.xml",
+        "lib/net472/BCrypt.Net-Next.dll",
+        "lib/net472/BCrypt.Net-Next.xml",
+        "lib/net48/BCrypt.Net-Next.dll",
+        "lib/net48/BCrypt.Net-Next.xml",
+        "lib/net5.0/BCrypt.Net-Next.dll",
+        "lib/net5.0/BCrypt.Net-Next.xml",
+        "lib/net6.0/BCrypt.Net-Next.dll",
+        "lib/net6.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.0/BCrypt.Net-Next.dll",
+        "lib/netstandard2.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.1/BCrypt.Net-Next.dll",
+        "lib/netstandard2.1/BCrypt.Net-Next.xml",
+        "readme.md"
       ]
     },
     "DnsClient/1.6.1": {
@@ -790,44 +834,38 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BCrypt.Net-Next >= 4.0.3",
       "MongoDB.Driver >= 2.23.1",
       "SolveMyIssue.Common >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Angela\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Sad Hentai\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj",
+      "projectUniqueName": "F:\\Coding\\smi\\SolveMyIssue\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj",
       "projectName": "SolveMyIssue.DataAccess",
-      "projectPath": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj",
-      "packagesPath": "C:\\Users\\Angela\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.DataAccess\\obj\\",
+      "projectPath": "F:\\Coding\\smi\\SolveMyIssue\\SolveMyIssue.DataAccess\\SolveMyIssue.DataAccess.csproj",
+      "packagesPath": "C:\\Users\\Sad Hentai\\.nuget\\packages\\",
+      "outputPath": "F:\\Coding\\smi\\SolveMyIssue\\SolveMyIssue.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Angela\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Sad Hentai\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.Common\\SolveMyIssue.Common.csproj": {
-              "projectPath": "C:\\Users\\Angela\\OneDrive\\0 IT-höskolan\\Grupparbete\\SolveMyIssue.Common\\SolveMyIssue.Common.csproj"
+            "F:\\Coding\\smi\\SolveMyIssue\\SolveMyIssue.Common\\SolveMyIssue.Common.csproj": {
+              "projectPath": "F:\\Coding\\smi\\SolveMyIssue\\SolveMyIssue.Common\\SolveMyIssue.Common.csproj"
             }
           }
         }
@@ -842,6 +880,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "BCrypt.Net-Next": {
+            "target": "Package",
+            "version": "[4.0.3, )"
+          },
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[2.23.1, )"

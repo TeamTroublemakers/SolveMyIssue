@@ -15,6 +15,7 @@ builder.Services.AddServerSideBlazor();
 
 var client = new MongoClient(Environment.GetEnvironmentVariable("CONNECTION_STRING"));
 builder.Services.AddSingleton<MongoClient>(client);
+
 builder.Services.AddSingleton<IUserRepository, UserRepository>();
 builder.Services.AddSingleton<IIssueRepository, IssueRepository>();
 
